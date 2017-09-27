@@ -1,3 +1,18 @@
+body {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+div .image {
+  display: flex;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+  height: 300px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -41,6 +56,7 @@ a {
 .column {
   display: inline-flex;
   flex-flow: column wrap;
+  margin: 0px 15px;
 }
 
 .column .large {
@@ -53,6 +69,23 @@ a {
 
 .column .small {
   width: 240px;
+}
+
+#main {
+  background: url(../images/champagne.png);
+  font-size: 40px;
+}
+
+#fall {
+  background: url(../images/fall.png)
+}
+
+#camera {
+  background: url(../images/camera.png)
+}
+
+#cat {
+  background: url(../images/cat.png)
 }
 div, .small{
   border: 3px dotted green;
