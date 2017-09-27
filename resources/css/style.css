@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: inline-flex;
+}
+
+header nav {
+  display: inline-flex;
+}
+
+div h1 {
+  margin-right: 750px;
+}
+
+h1 {
+  color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+a {
+  color: black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.column {
+  display: inline-flex;
+  flex-flow: column wrap;
+}
+
+.column .large {
+  width: 630px;
+}
+
+.column .medium {
+  width: 300px;
+}
+
+.column .small {
+  width: 240px;
+}
+div, .small{
+  border: 3px dotted green;
+}
