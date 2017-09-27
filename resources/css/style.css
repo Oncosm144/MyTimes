@@ -1,11 +1,6 @@
-body {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
-div .image {
+.image {
   display: flex;
+  font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
@@ -27,10 +22,6 @@ header nav {
   display: inline-flex;
 }
 
-div h1 {
-  margin-right: 750px;
-}
-
 h1 {
   color: MediumAquamarine;
   font-family: Verdana;
@@ -39,7 +30,7 @@ h1 {
   margin: 20px;
 }
 
-a {
+nav a {
   color: black;
   font-family: Verdana;
   font-size: 14px;
@@ -47,10 +38,17 @@ a {
   margin: 20px;
 }
 
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
 .content {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  margin: 40px 0px;
 }
 
 .column {
@@ -61,6 +59,34 @@ a {
 
 .column .large {
   width: 630px;
+  justify-content: space-between;
+}
+
+.lower.column {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#orca, #burger {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#orca .large,
+#burger .large {
+  width: 300px;
+  height: 230px;
+}
+
+#orca .image,
+#burger .image,
+.medium h3 {
+  text-align: center;
+  align-items: center;
 }
 
 .column .medium {
@@ -77,16 +103,69 @@ a {
 }
 
 #fall {
-  background: url(../images/fall.png)
+  background: url(../images/fall.png);
+  height: 300px;
+  width: 300px;
 }
 
 #camera {
-  background: url(../images/camera.png)
+  background: url(../images/camera.png);
+  height: 300px;
+  width: 300px;
 }
 
 #cat {
   background: url(../images/cat.png)
 }
-div, .small{
-  border: 3px dotted green;
+
+.bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.small h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small a {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  margin: 0px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: MediumAquamarine;
+  margin: 80px auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+}
+
+footer {
+  display: inline-flex;
+  align-items: center;
+}
+
+footer h1 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+footer a {
+  color: black;
+  padding: 10px;
 }
